@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# To Run
+### Run in separate terminals
+- npm start
+- npm run electron
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
