@@ -7,6 +7,7 @@
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
     "electron": "^33.0.1",
+    "electron-is-dev": "^3.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -17,6 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"npm run start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron": "electron ."
   },
   "eslintConfig": {
@@ -41,5 +43,9 @@
   "main": "main.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "wait-on": "^8.0.1"
+  }
 }

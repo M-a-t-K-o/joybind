@@ -2,7 +2,8 @@
 ### Run in 2 separate terminals
 - npm start
 - npm run electron
-
+### Or
+- npm run electron-dev
 
 
 ## Getting Started with Create React App
