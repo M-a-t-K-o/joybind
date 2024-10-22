@@ -19,14 +19,12 @@ exec('npm run build', (err, stdout, stderr) => {
         console.error(data);
     });
 
-    // After a short delay, run Electron
-    setTimeout(() => {
-        exec('npm run electron', (err, stdout, stderr) => {
-            if (err) {
-                console.error(`Error starting Electron: ${stderr}`);
-                return;
-            }
-            console.log(stdout);
-        });
-    }, 5000); // Adjust the delay as necessary
+    // Wait for the server to start
+    exec('wait-on http://localhost:3000 && npm run electron', (err, stdout, stderr) => {
+        if (err) {
+            console.error(`Error starting Electron: ${stderr}`);
+            return;
+        }
+        console.log(stdout);
+    });
 });
