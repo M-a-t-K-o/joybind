@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "electron-dev": "electron ."
+    "dev": "node start.js"
   },
   "eslintConfig": {
     "extends": [

@@ -1,9 +1,11 @@
 # To Run
-### Run in 2 separate terminals
-- npm start
-- npm run electron
-### Or
-- npm run electron-dev
+- npm run dev
+### Separate commands
+1. update version
+    - npm run build  
+2. Run in separate terminals
+    1. serve -s build
+    2. npm run electron
 
 
 ## Getting Started with Create React App
